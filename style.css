@@ -14,7 +14,7 @@ hr {
     border: 1px solid black;
 }
 
-menu, menu:focus {
+menu {
     height: 100%;
     width: 50px;
     position: fixed;
@@ -22,19 +22,6 @@ menu, menu:focus {
     left: 0;
     background: #111;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 10px;
-}
-
-menu:hover {
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 10px;
 }
 
@@ -46,25 +33,6 @@ menu input {
     transition: 0.3s;
     font-size: 36px;
     border: none;
-}
-
-menu input:hover {
-    background: #111;
-    padding: 0px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-    font-size: 36px;
-    border: none;
-}
-
-
-menu:hover ~ main {
-    margin-left: 150px;
-}
-
-menu:hover + form {
-    margin-left: 150px;
 }
 
 menu::after {
