@@ -1,0 +1,209 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: grey;
+    transition: .05s;
+}
+
+hr {
+    margin: 5px;
+    background: black;
+    border: 1px solid black;
+}
+
+menu, menu:focus {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+menu:hover {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+menu input {
+    background: #111;
+    padding: 0px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-size: 36px;
+    border: none;
+}
+
+menu input:hover {
+    background: #111;
+    padding: 0px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+    font-size: 36px;
+    border: none;
+}
+
+
+menu:hover ~ main {
+    margin-left: 150px;
+}
+
+menu:hover + form {
+    margin-left: 150px;
+}
+
+menu::after {
+    content: var(--pseudo-cart-number);
+    color: white;
+    text-align: center;
+    background: red;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 30px;
+    top: 190px;
+}
+
+form {
+    transition: 0.5s;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+#search {
+    font-size: 36px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    box-sizing: border-box;
+    outline: 0;
+    padding-inline-end: 62px;
+    padding-inline-start: 20px;
+    position: relative;
+}
+
+
+#camera {
+    font-size: 30px;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 42px;
+    outline: 0;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    right: 24px;
+    width: 48px;
+}
+
+main {
+    transition: 0.5s;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+main td {
+    padding: 5px;
+    border: 1px solid grey;
+    cursor: default;
+}
+
+.user {
+    border: none;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    cursor: pointer;
+    color: black;
+    transition-duration: 1s;
+    transition: background-position 2s;
+    background-image: linear-gradient(to right, black, white);
+    background-size: 400%;
+    background-position: right;
+}
+
+.user:hover {
+    border: none;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+    background-position: left;
+}
+
+.userSelect {
+    border: none;
+    border-radius: 5px;
+    background: black;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+    transition-duration: 1s;
+    background: black;
+}
+
+.item, .cart {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 400px;
+    cursor: pointer;
+    transition-duration: 1s;
+    transition: background-position 2s;
+    background-image: linear-gradient(to right, black, white);
+    background-size: 400%;
+    background-position: right;
+}
+
+.item:hover, .cart:hover {
+    color: white;
+    background-position: left;
+}
+
+.transfer {
+    border: none;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    cursor: pointer;
+    color: black;
+    transition-duration: 1s;
+    transition: background-position 2s;
+    background-image: linear-gradient(to right, black, grey);
+    background-size: 400%;
+    background-position: right;
+}
+
+.transfer:hover {
+    color: white;
+    background-position: left;
+}
