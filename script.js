@@ -409,6 +409,7 @@ class Logic {
         this.doc.clear();
         ['<td>ITEM</td><td>ID</td><td>DATE</td><td>USER</td><td>Quantity</td>']
             .concat(this.db.getTransfer()
+                .slice()
                 .reverse()
                 .map(x => Object.assign({}, x, itemMap.get(x.id)))
                 .filter(this.filterSearch, this)
